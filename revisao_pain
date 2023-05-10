@@ -1,0 +1,117 @@
+#pow(4,2) = x**y
+pow(4,2)
+#abs(-4) = valor absoluto
+abs(-4)
+
+round(9.54,1) #arredonda para uma casa decimal
+2 + round(9.54,0) #arredonda para 0 casas decimais e fica 10 pois é o número mais prox
+
+def func(x,y):
+    c = 2.54
+    return c*x + y
+# def = comando para definição da função
+# func = nome da função
+# (x,y) = lista de paramêtros
+# : = início de u bloco de comando
+# c=2.54 = comandos de funções
+# return = comando para retornar o resultado quando chamada
+# c*x + y = resultado da função
+
+from random import randint 
+import random
+from random import *
+
+n = randint(1,6)
+n = random.randint(1,6)
+n = randint(1,6)
+
+from random import randint
+sorteado = randint(1,6)
+print('Número sorteado:', sorteado)
+if sorteado == 6:
+   print('Conseguimos o maior número!')
+   print('Temos muita sorte!')
+print('Fim do programa')
+
+def parouimpar(n):
+  if n % 2 == 0:
+    return "par"
+  else:
+    return "impar"
+
+n = randint(1, 100)
+print('O número', n, 'é', parouimpar(n))
+
+contador = 1
+while contador < 10:
+  print(contador)
+  contador = contador + 1
+print('Fim')
+
+from random import randint
+while True:
+  n = randint(1,10)
+  print(n)
+  if n == 6:
+    break
+
+while True:
+  senha = input('Digite a senha: ')
+  if senha == "abracadabra":
+    break
+  else:
+    print('Senha incorreta. Tente novamente')
+
+#int = inteiro = 8
+#float = fracionário = 8.5
+#bool = lógico/booleano = True/False
+#str = string = texto = 'Hello'
+
+numeros = [10,20,30,40]
+i = 0
+soma = 0
+while (i < len(numeros)):
+  soma = soma + numeros[i]
+  i = i + 1
+print(soma)  
+
+# xs.count = quantos elementos é igual a 10
+# xs.append = add valor no final da lista
+# xs.insert(i,10) = add valor 10 na posição i 
+# xs.pop = remove último item da lista
+# xs.clear = remove todos elementos da lista
+
+print(f'Eu estou estudando programação em Python') #mostra a mensagem
+import random
+n = random.randint(1,2) #gera um número entre 1 e 2 e armazena em n
+def numero(n):
+  if n == 1: # se for igual a 1
+    return 'Vou fazer mais exercícios' #mostra essa mensagem
+  elif n == 2: # se for igual a 2
+    return 'Vou consultar o material de apoio' # mostra essa mensagem
+print(numero(n))
+
+a = float(input('Digite um valor para A: '))
+
+
+import random
+n1 = random.randint(0,40)
+chuva = random.randint(0,1)
+def chuva_s_n(chuva):
+  if chuva == 0:
+    return 'Não'
+  else: 
+    return 'Sim'
+C = chuva_s_n(chuva)
+def recomendar():
+  if C == 'Sim' and n1 < 20:
+    return "Vista mangas longas e calça. Leve um guarda-chuva se sair de casa."
+  elif C == 'Sim' and n1 > 20:
+    return "Vista manga-curta e calça/bermuda. Leve um guarda-chuva."
+  elif C == 'Não' and n1 < 20:
+    return "Vista manga longas e calça."
+  elif C == 'Não' and n1 > 20:
+    return "Vista manga curta e calça/bermuda."
+R = recomendar()
+print(f'Temperatura: {n1}. Chuva: {C}. Recomedações: {R}.')
+
